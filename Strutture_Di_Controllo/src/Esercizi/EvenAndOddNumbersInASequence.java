@@ -28,13 +28,11 @@ public class EvenAndOddNumbersInASequence {
                 pari[indexP++] = sequenza[i];
             else dispari[indexD++] = sequenza[i];
         }
-        System.out.println("");
-        System.out.println("Numeri pari nella sequenza:");
+        System.out.println("\nNumeri pari nella sequenza:");
         for(int i = 0; i < numPari; i++)
             System.out.print("|" + pari[i] + "|");
 
-        System.out.println("");
-        System.out.println("Numeri dispari nella sequenza:");
+        System.out.println("\nNumeri dispari nella sequenza:");
         for(int i = 0; i < numDispari; i++)
             System.out.print("|" + dispari[i] + "|");
     }
