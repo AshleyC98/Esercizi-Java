@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Es7 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String output = "";
+        StringBuilder output = new StringBuilder();
         double media = 0;
         int numeri = 0;
         System.out.println("Inserire un numero alla volta (premi INVIO per terminare): ");
@@ -14,15 +14,15 @@ public class Es7 {
             int num = Integer.parseInt(input);
             numeri++;
             if(output.isEmpty()) {
-                output += "(" + num;
+                output.append("(").append(num);
             }
             else
-                output += " + " + num;
+                output.append(" + ").append(num);
             media += num;
             input = sc.nextLine();
         }
         media /= numeri;
-        output += ")/" + numeri + " = " + media;
+        output.append(")/").append(numeri).append(" = ").append(media);
         System.out.println(output);
     }
 }

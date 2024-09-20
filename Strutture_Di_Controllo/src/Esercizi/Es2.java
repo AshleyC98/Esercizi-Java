@@ -6,21 +6,21 @@ public class Es2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Inserire un numero alla volta (premi INVIO per terminare): ");
-        String input = sc.nextLine();
-        String output = "";
+        StringBuilder input = new StringBuilder(sc.nextLine());
+        StringBuilder output = new StringBuilder();
         int sum = 0;
         while(!input.isEmpty()) {
-            int number = Integer.parseInt(input);
+            int number = Integer.parseInt(String.valueOf(input));
             sum+=number;
             if(output.isEmpty()) {
-                output += input;
+                output.append(input);
             }
             else {
-                output += " + " + input;
+                output.append(" + ").append(input);
             }
-            input = sc.nextLine();
+            input = new StringBuilder(sc.nextLine());
         }
-        output += " = " + sum;
+        output.append(" = ").append(sum);
         System.out.println(output);
     }
 }

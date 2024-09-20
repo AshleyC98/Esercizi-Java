@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Es6 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String indexPari = "", indexDispari = "";
+        StringBuilder indexPari = new StringBuilder() , indexDispari = new StringBuilder();
         System.out.println("Inserire un numero alla volta (premi INVIO per terminare): ");
         String input = sc.nextLine();
         int index = 1, sumPari = 0, sumDispari = 0;
@@ -13,24 +13,24 @@ public class Es6 {
             int number = Integer.parseInt(input);
             if(index % 2 == 0) {
                 if(indexPari.isEmpty()) {
-                    indexPari += number;
+                    indexPari.append(number);
                 } else {
-                    indexPari += " + " + number;
+                    indexPari.append(" + ").append(number);
                 }
                 sumPari += number;
             } else {
                 if(indexDispari.isEmpty()) {
-                    indexDispari += number;
+                    indexDispari.append(number);
                 } else {
-                    indexDispari += " + " + number;
+                    indexDispari.append(" + ").append(number);
                 }
                 sumDispari += number;
             }
             index++;
             input = sc.nextLine();
         }
-        indexPari += " = " + sumPari;
-        indexDispari += " = " + sumDispari;
+        indexPari.append(" = ").append(sumPari);
+        indexDispari.append(" = ").append(sumDispari);
         System.out.println(indexPari);
         System.out.println(indexDispari);
     }

@@ -6,22 +6,21 @@ public class Es3 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Inserire un numero alla volta (premi INVIO per terminare): ");
-        String pari = "";
-        String dispari = "";
+        StringBuilder pari = new StringBuilder(), dispari = new StringBuilder();
         String input = sc.nextLine();
         while (!input.isEmpty()) {
                 int number = Integer.parseInt(input);
                 if (number % 2 == 0) {
                     if (pari.isEmpty()) {
-                        pari+=number;
+                        pari.append(number);
                     } else {
-                        pari+= " " + number;
+                        pari.append(" ").append(number);
                     }
                 } else {
                     if (dispari.isEmpty()) {
-                        dispari+=number;
+                        dispari.append(number);
                     } else {
-                        dispari += " " + number;
+                        dispari.append(" ").append(number);
                     }
                 }
             input = sc.nextLine();
