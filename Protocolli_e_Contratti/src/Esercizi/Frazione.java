@@ -31,6 +31,10 @@ public class Frazione {
         return new Frazione(this.num*f.den,this.den*f.num);
     }
 
+    public Frazione quadrato() {
+        return new Frazione(this.num*this.num, this.den*this.den);
+    }
+
     public boolean equals(Frazione f) {
         Frazione tmp = this.meno(f);
         return tmp.num == 0;
