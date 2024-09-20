@@ -1,7 +1,7 @@
 package Esercizi;
 
 import java.util.Scanner;
-
+//Dato in input una sequenza di numeri dall'utente, distinguere i pari dai dispari
 public class Es3 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
