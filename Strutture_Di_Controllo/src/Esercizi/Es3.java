@@ -6,27 +6,20 @@ public class Es3 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Inserire un numero alla volta (premi INVIO per terminare): ");
-
         String pari = "";
         String dispari = "";
-
-        boolean firstP = true;
-        boolean firstD = true;
         String input = sc.nextLine();
-
         while (!input.isEmpty()) {
                 int number = Integer.parseInt(input);
                 if (number % 2 == 0) {
-                    if (firstP) {
+                    if (pari.isEmpty()) {
                         pari+=number;
-                        firstP = false;
                     } else {
                         pari+= " " + number;
                     }
                 } else {
-                    if (firstD) {
+                    if (dispari.isEmpty()) {
                         dispari+=number;
-                        firstD = false;
                     } else {
                         dispari += " " + number;
                     }

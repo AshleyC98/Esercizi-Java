@@ -9,13 +9,11 @@ public class Es2 {
         String input = sc.nextLine();
         String output = "";
         int sum = 0;
-        boolean first = true;
         while(!input.isEmpty()) {
             int number = Integer.parseInt(input);
             sum+=number;
-            if(first) {
+            if(output.isEmpty()) {
                 output += input;
-                first = false;
             }
             else {
                 output += " + " + input;
