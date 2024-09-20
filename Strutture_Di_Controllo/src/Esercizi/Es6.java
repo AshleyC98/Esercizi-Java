@@ -1,7 +1,7 @@
 package Esercizi;
 
 import java.util.Scanner;
-//Dato in input due numeri dall'utente, calcolare la somma dei numeri in posizione pari e la somma dei numeri in posizione dispari
+//Dato in input una sequenza di numeri dall'utente, calcolare la somma dei numeri in posizione pari e la somma dei numeri in posizione dispari
 public class Es6 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
