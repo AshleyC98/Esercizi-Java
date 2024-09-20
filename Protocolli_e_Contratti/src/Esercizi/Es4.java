@@ -1,5 +1,6 @@
 package Esercizi;
-
+//Scrivere un'applicazione che lagga due interi e ne calcoli la somma, l'aapplicazione deve restituire la somma
+//dovr'a scrivere l'operazione in cifre e in lettere
 import prog.io.*;
 import prog.utili.Intero;
 
@@ -10,7 +11,7 @@ public class Es4 {
         Intero a = new Intero(in.readInt("Primo addendo: "));
         Intero b = new Intero(in.readInt("Secondo addendo: "));
         Intero somma = new Intero(a.intValue()+b.intValue());
-        System.out.println(a.intValue() + " + " + b.intValue() + " = " + somma.intValue());
-        System.out.println(a + " + " + b + " = " + somma);
+        out.println(a.intValue() + " + " + b.intValue() + " = " + somma.intValue());
+        out.println(a + " + " + b + " = " + somma);
     }
 }
