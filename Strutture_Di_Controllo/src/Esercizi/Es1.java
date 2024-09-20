@@ -1,8 +1,8 @@
 package Esercizi;
 
 import java.util.Scanner;
-
-public class EvenOrOdd {
+//Dato in input un numero dall'utente, indicare se è pari o dispari
+public class Es1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Inserire un numero: ");
