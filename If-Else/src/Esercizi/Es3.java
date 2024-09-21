@@ -1,5 +1,5 @@
 package Esercizi;
-/*La lunghezza deòòa stringa che esprime il numero 12 è 6, pari cioè alla metà del numero stessso.
+/*La lunghezza dela stringa che esprime il numero 12 è 6, pari cioè alla metà del numero stesso.
 * Altri numeri come 25 e 6 hanno questa proprietà.
 * Scrivere un'applicazione che dato un intero verifichi questa proprietà*/
 import prog.io.ConsoleInputManager;
